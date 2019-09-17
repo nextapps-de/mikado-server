@@ -1,0 +1,41 @@
+{
+  "public": true,
+  "name": "mikado-server",
+  "description": "Web's smartest virtual DOM templating engine.",
+  "homepage": "https://github.com/nextapps-de/mikado/",
+  "author": "Thomas Wilkerling",
+  "copyright": "Nextapps GmbH",
+  "version": "0.0.3",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nextapps-de/mikado/issues",
+    "email": "info@nextapps.de"
+  },
+  "main": "server.js",
+  "bin": {
+    "mikado-server": "./cluster.js"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nextapps-de/mikado.git"
+  },
+  "scripts": {
+    "cluster": "node cluster.js",
+    "serve": "node server.js",
+    "server": "node server.js",
+    "start": "node server.js"
+  },
+  "files": [
+    "cluster.js",
+    "env.js",
+    "server.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "express": "^4.17.1",
+    "mikado-compile": "^0.0.0"
+  },
+  "devDependencies": {}
+}
